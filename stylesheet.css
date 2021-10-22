@@ -1,0 +1,43 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background:#333;
+	color:#fff;
+	font-family:monospace;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:92vh;
+	padding:70px;
+}
+
+.animation-text{
+	font-size:70px;
+	border-right:2px solid #fff;
+	white-space:nowrap;
+	overflow:hidden;
+	position:relative;
+	animation: typewriter 3s steps(30) 1s 1 normal both,
+			cursor 0.5s steps(30) infinite normal;
+}
+
+@keyframes typewriter{
+	0%{
+		width:0;
+	}
+	100%{
+		width:100%;
+	}
+}
+
+@keyframes cursor{
+	0%{
+		border-right-color:transparent;
+	}
+	100%{
+		border-right-color:#fff;
+	}
+}
